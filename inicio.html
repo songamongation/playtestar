@@ -1,0 +1,38 @@
+<html>
+<head>
+    <title>Entrada</title>
+    <link rel="icon" type="image/x-icon" href="icone.png">
+<link rel="stylesheet" type="text/css" href="style.css" /></head>
+<body>
+<div class="image-container">
+    <img src="oi.png">
+    <p>você ainda tem um longo caminho pela frente</p>
+    <button onclick="window.location.href='https://songamongation.github.io/camada2/fase2-1.html'">Começar</button>
+</div>
+</body>
+</html>
+
+    <script>
+        const audioImage = document.getElementById('musica');
+        const audio = document.getElementById('audio');
+        document.cookie = "fase2-4=chocolate; path=/";
+        audioImage.addEventListener('click', function() {
+            audio.currentTime = 0; 
+            audio.play();
+        });
+    </script>
+    <script>
+        document.addEventListener('contextmenu',(e) => {
+            e.preventDefault()
+
+            return false
+
+        })
+        document.addEventListener('keydown',(e) => {
+
+                if(e.ctrlKey || e.keyCode ==123){
+                    e.stopPropagation()
+                    e.preventDefault()
+                }
+            })
+    </script>
